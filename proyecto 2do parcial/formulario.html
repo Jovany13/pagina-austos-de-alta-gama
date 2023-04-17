@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="icon" href="lambo.jpg">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body bgcolor="fffaf0">
+	<script type="text/javascript">
+		alert("Llena el formulario para tener una mejor experiencia");
+	</script>
+	<font size="9"><center>Formulario</center></font>
+	<fieldset>
+		<table>
+			<font>
+			<tr>
+				<td>
+					<font size="6">Alias:</font>
+				</td>
+				<td>
+					<input type="text" name="1" placeholder="Ingresar apodo" required>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<font size="6">Nombre:</font>
+				</td>
+				<td>
+					<input type="text" name="2" placeholder="Ingresa tu nombre" required>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<font size="6">Apellido:</font>
+				</td>
+				<td>
+					<input type="text" name="3" placeholder="Apellido paterno"required>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<font size="6">Apellido:</font>
+				</td>
+				<td>
+					<input type="text" name="4" placeholder="Apellido materno"required>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<font size="6">Color favorito:</font>
+				</td>
+				<td>
+					<input type="color">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<font size="6">Edad:</font>
+				</td>
+				<td>
+					<input type="number" placeholder="Ingresa tu edad" required>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<font size="6">Genero:</font>
+				</td>
+				<td>
+					<table>
+						<tr>
+							<td>
+								<center><input type="radio"></center>
+							</td>
+							<td>
+								<center><input type="radio"></center>
+							</td>
+							<td>
+								<center><input type="radio"></center>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<center>M</center>
+							</td>
+							<td>
+								<center>F</center>
+							</td>
+							<td>
+								<center>Omitir</center>
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<font size="5">¿Te gustan los autos?</font>
+				</td>
+				<td>
+					<table>
+						<tr>
+							<td>
+								<center><input type="checkbox"></center>
+							</td>
+							<td>
+								<center><input type="checkbox"></center>
+							</td>
+							<td>
+								<center><input type="checkbox"></center>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<center>Si</center>
+							</td>
+							<td>
+								<center>No</center>
+							</td>
+							<td>
+								<center>Talvez</center>
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<font size="6">Correo:</font>
+				</td>
+				<td>
+					<input type="email" name="5" placeholder="Ingresa correo electronico" required>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<font size="6">Correo:</font>
+				</td>
+				<td>
+					<input type="email" name="6" placeholder="Confirmar correo electronico" required>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<font size="6">Password:</font>
+				</td>
+				<td>
+					<input type="Password" name="7" id="con1" placeholder="Ingresar contraseña" required>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<font size="6">Password:</font>
+				</td>
+				<td>
+					<input type="Password" name="8" id="con2" placeholder="Confirmar contraseña" required>
+				</td>
+			</tr>
+		</font>
+		</table>
+		<center>
+			<button type="button" onclick="acceder()"><input type="image" name="botton" src="otro.jpg" height="70px" width="120px"></button>
+			<center>Siguiente</center>
+				<script type="text/javascript">
+		function acceder(){
+			var CON1;
+			var CON2;
+			CON1=document.getElementById('con1').value;
+			CON2=document.getElementById('con2').value;
+			if (CON1==CON2) {
+				alert("Listo ahora puedes acceder")
+				window.location="bienvenido.html";
+			}else{
+				alert("Contraseña incorrecta verifica que la contraseña sea correcta");
+			}
+		}
+	</script>
+		</center>
+	</fieldset>
+</body>
+</html>
